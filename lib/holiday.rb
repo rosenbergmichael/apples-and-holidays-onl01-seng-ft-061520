@@ -69,13 +69,13 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-holiday_hash.each do |season, holiday|
-  season.capitalize
-  holiday.each do |holiday, supply|
+holiday_hash.each do | season, holiday|
+     puts "#{season.capitalize}:"
+     holiday.each do |holiday, supply|
        puts "  #{holiday.to_s.split("_").map {|x| x.capitalize}.join(" ")}: #{supply.join(", ")}"
      end
   end 
-end 
+end
 
 
 #* Look closely at the output string that the test is expecting. You'll notice that it expects holiday names, like "New Years", to have both words capitalized. Ruby has a `.capitalize` method that you can call on a string. **But, note:**
