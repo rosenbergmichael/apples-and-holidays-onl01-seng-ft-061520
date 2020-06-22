@@ -74,6 +74,7 @@ holiday_hash.each do |holiday, supply|
  name.capitalize
  holiday.join 
  puts holiday_hash
+  binding.pry
   end
 end 
 
