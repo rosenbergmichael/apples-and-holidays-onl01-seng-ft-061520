@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 holiday_hash.each do |holiday, name|
  holiday.to_s.split 
- holiday.capitalize
+ name.capitalize
  holiday.join 
  puts holiday_hash
   end
